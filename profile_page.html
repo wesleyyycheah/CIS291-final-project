@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>TuneBox - Home</title>
+    <title>Profile</title>
 
     <link
       rel="canonical"
@@ -48,7 +48,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/profile_page_styles.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -79,7 +79,7 @@
               <a class="nav-link" href="#">Playlists</a>
             </li>
             <li class="nav-item right-align">
-              <a class="nav-link" href="profile_page.html">Profile</a>
+              <a class="nav-link" href="#">Profile</a>
             </li>
             <li class="nav-item right-align">
               <a class="nav-link" href="#">Log-In</a>
@@ -107,17 +107,32 @@
 
     <main>
       <div class="container py-4">
-        <div class="p-5 mb-4 bg-light jumbotron">
+        <div class="profile-div">
+          <h1 id="profile">
+            Profile / <span id="profile-name">Wesley Cheah</span>
+          </h1>
+          <button
+            class="btn btn-outline-light edit-profile-button"
+            type="button"
+          >
+            Edit Profile
+          </button>
+        </div>
+
+        <div class="p-5 mb-5 jumbotron">
           <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">What is TuneBox?</h1>
-            <p class="col-md-8 fs-4">
-              TuneBox is a website that allows users create their own playlists
-              of their favorite songs! We also allow users to create their own
-              profiles to save their playlists and rate their favorite (or not
-              so favorite) artists!
+            <img src="assets/image_1.png" class="profile-image" />
+            <h4 class="display-5 fw-bold">Wesley Cheah</h4>
+            <p class="col-md-8 fs-4 bio-paragraph">
+              My name is Wesley and I love old music! My dad's music taste
+              largely influenced my taste in music as well. He listens to a lof
+              of the Beatles, Billy Joel, Queen, Guns N' Roses, and many more.
             </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Get Started
+            <button class="btn btn-primary btn-md follow-button" type="button">
+              Follow
+            </button>
+            <button class="btn btn-primary btn-md" type="button">
+              Message
             </button>
           </div>
         </div>
@@ -125,41 +140,32 @@
         <div class="row align-items-md-stretch">
           <div class="col-md-4">
             <div class="h-100 p-5 text-white bg-dark jumbotron">
-              <h2>Create a Playlist</h2>
-              <p>
-                Create your own playlist and add songs to it! You are able to
-                add songs and delete songs from your playlist. Create your own
-                playlist now!
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Create Playlist
-              </button>
+              <h2>Favorite Genres</h2>
+              <ul>
+                <li class="list-item">Rock</li>
+                <li class="list-item">Pop</li>
+                <li class="list-item">Rock and Roll</li>
+              </ul>
             </div>
           </div>
           <div class="col-md-4">
             <div class="h-100 p-5 text-white bg-dark jumbotron">
-              <h2>Create a Profile</h2>
-              <p>
-                Create your own profile by registering for an account! You are
-                able to register for an account and login to access all the
-                playlists, artists, and songs that you have saved!
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Create Account
-              </button>
+              <h2>Favorite Artists</h2>
+              <ul>
+                <li class="list-item">Queen</li>
+                <li class="list-item">The Beatles</li>
+                <li class="list-item">AC/DC</li>
+              </ul>
             </div>
           </div>
           <div class="col-md-4">
             <div class="h-100 p-5 text-white bg-dark jumbotron">
-              <h2>Rate Artists</h2>
-              <p>
-                Don't like an artist? Let people know! Love an artist? Spread
-                the word. You can leave a rating for an artist that you love or
-                don't really enjoy. It will be based on a five star system.
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Rate Artist
-              </button>
+              <h2>Favorite Songs</h2>
+              <ul>
+                <li class="list-item">Thunderstruck - AC/DC</li>
+                <li class="list-item">Yesterday - The Beatles</li>
+                <li class="list-item">Somebody to Love - Queen</li>
+              </ul>
             </div>
           </div>
         </div>
